@@ -1,16 +1,20 @@
 package ru.job4j.calculator;
 
- class ArgMethod {
+ class MathFunc  {
+    public static int func1(int x) {
 
-    public static void hello(String name, String age) {
-        System.out.println("Hello, " + name + age);
-    }
+        int y = x * 45 -154;
 
-    public static void main(String[] args) {
-        String name = "Petr Arsentev";
-        String age = " 33";
-
-        ArgMethod.hello(name, age);
+        return y;
 
     }
+
+    public static void main (String[] args) {
+
+        int result = MathFunc.func1(100);
+
+        System.out.println(result);
+
+    }
+
 }
